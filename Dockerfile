@@ -13,7 +13,7 @@ COPY package.json /app/package.json
 COPY yarn.lock /app/yarn.lock
 
 # Install dependencies
-yarn add
+RUN yarn install
 
 # Entry point
 CMD ['npm', 'start']
