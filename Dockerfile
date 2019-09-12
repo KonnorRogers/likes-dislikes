@@ -1,12 +1,12 @@
 FROM node:12.10.0-alpine
 
-# install yarn
-RUN apk update && apk add yarn
+# Install yarn
+RUN apk update && apk add yarn bash
 
 WORKDIR /app
 
-# Add node modules as executables in path
-ENV PATH /app/node_modules/.bin:PATH
+# port 3000 visible in docker & on localhost
+EXPOSE 3000
 
 # Copy dependencies
 COPY package.json /app/package.json
@@ -15,10 +15,8 @@ COPY yarn.lock /app/yarn.lock
 # Install dependencies
 RUN yarn install
 
-# Entry point
+# Copy files
+COPY . /app
+
 CMD ['npm', 'start']
-
-
-
-
 
