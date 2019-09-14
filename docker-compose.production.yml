@@ -1,0 +1,19 @@
+
+version: '3.7'
+
+services:
+  likes-dislikes-production:
+    container_name: likes-dislikes-production
+    build:
+      # use this directory
+      context: .
+      # where to build from
+      dockerfile: Dockerfile.production
+    volumes:
+      # This is so that you dont have to rebuild node_modules everytime the
+      # the container is used
+      - '.:/app'
+      - '/app/node_modules'
+    environment:
+      - NODE_ENV=production
+    command: yarn build
