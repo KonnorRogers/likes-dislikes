@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  likes-dislikes:
+    container_name: likes-dislikes
+    build:
+      # use this directory
+      context: .
+      # where to build from
+      dockerfile: Dockerfile
+    volumes:
+      # This is so that you dont have to rebuild node_modules everytime the
+      # the container is used
+      - '.:/app'
+      - '/app/node_modules'
+    ports:
+      # Exposes port 3000
+      - '3000:3000'
+    environment:
+      - NODE_ENV=development
+        # Enables hot reloading
+      - CHOKIDAR_USEPOLLING=true
+    command: yarn start

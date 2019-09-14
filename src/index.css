@@ -1,0 +1,13 @@
+button {
+  margin: 10px;
+  font-size: x-large;
+}
+
+button:hover {
+  color: blue;
+}
+
+.liked,
+.disliked {
+  color: red;
+}
