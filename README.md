@@ -65,3 +65,7 @@ yarn global add gh-pages
 yarn run deploy
 # this will run 'gh-pages -d build'
 ```
+
+### Issues
+
+Feel free to email me konnor7414@gmail.com with issues.
