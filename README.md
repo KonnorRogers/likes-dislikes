@@ -1,4 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tools used
+NodeJS 12.10
+React 16.9
+Create-React-app 3.1.1
 
 ## Getting started
 
