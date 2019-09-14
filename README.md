@@ -1,6 +1,6 @@
 ## Tools used
-NodeJS 12.10
-React 16.9
+NodeJS 12.10<br>
+React 16.9<br>
 Create-React-app 3.1.1
 
 ## Getting started
