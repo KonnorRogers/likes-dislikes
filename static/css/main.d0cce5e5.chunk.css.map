@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,OACE,WAAY,CACZ,iBACF,CAEA,aACE,UACF,CAEA,iBAEE,SACF","file":"main.d0cce5e5.chunk.css","sourcesContent":["button {\n  margin: 10px;\n  font-size: x-large;\n}\n\nbutton:hover {\n  color: blue;\n}\n\n.liked,\n.disliked {\n  color: red;\n}\n"]}
